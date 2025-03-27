@@ -1,0 +1,25 @@
+encender el entorno virtal
+venv\Scripts\activate
+
+si esto no funciona y el entorno virtual esta corrupto, crearlo 
+(pueden crearlo dentro de la carpeta BACKEND o en stockquery)
+python -m venv venv
+
+y ejecutalo
+
+
+
+
+instala las dependencias(aqui ya debes estar en la carpeta stockquery)
+cd BACKEND
+cd stockquery
+pip install -r requirements.txt
+
+
+ejecutar migraciones
+python manage.py makemigrations
+python manage.py migrate
+
+
+ejecutar BACKEND
+python manage.py runserver

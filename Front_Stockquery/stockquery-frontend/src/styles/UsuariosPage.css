@@ -1,0 +1,116 @@
+.usuarios-container {
+    padding: 20px;
+  }
+  
+  .btn-crear {
+    background-color: #fdb813;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-crear:hover {
+    background-color: #e0a610;
+  }
+  
+  .usuarios-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .usuarios-table th,
+  .usuarios-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .usuarios-table th {
+    background-color: #f0f0f0;
+  }
+  
+  .foto-perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .btn-edit,
+  .btn-delete {
+    background-color: #f4511e;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-edit:hover,
+  .btn-delete:hover {
+    background-color: #d63c0a;
+  }
+  
+  .form-usuario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-usuario label {
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  
+  .form-usuario input,
+  .form-usuario select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .btn-submit {
+    background-color: #f4511e;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #d63c0a;
+  }
+  
+  .btn-cancel {
+    background-color: #999;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #777;
+  }
+  

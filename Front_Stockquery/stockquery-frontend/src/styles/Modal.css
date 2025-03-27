@@ -1,0 +1,58 @@
+/* src/components/Modal.css */
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Para que el header se mantenga fijo y el body haga scroll */
+    position: relative;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+  }
+  
+  .modal-title {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: #333;
+  }
+  
+  .modal-body {
+    padding: 20px;
+    overflow-y: auto; /* Scroll en el contenido si es muy grande */
+  }
+  

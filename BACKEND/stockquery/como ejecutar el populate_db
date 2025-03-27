@@ -1,0 +1,8 @@
+enciendes el entorno virtual
+
+venv\Scripts\activate
+
+
+y ejecutar
+
+python populate_db.py

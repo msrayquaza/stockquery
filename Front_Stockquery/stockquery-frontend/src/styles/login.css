@@ -1,0 +1,126 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+/* Fondo con imagen difuminada */
+.background-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url('../img/fondo.png') center center/cover no-repeat;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+/* Contenedor del login */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    text-align: center;
+    background: #00B0BD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Título de la aplicación */
+.app-title {
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+/* Estilos del formulario */
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Labels del formulario */
+label {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+/* Botón de login */
+button {
+    background: #F4511E;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #E0400D;
+}
+
+/* Mensaje de error */
+#error-message {
+    color: #ff3333;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;
+    }
+}
